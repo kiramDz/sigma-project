@@ -8,7 +8,7 @@
       <div class="hidden lg:flex flex-grow" id="navbar-collapse">
         <ul class="flex flex-col mt-3 mb-1 lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0">
           <li>
-            <a href="#" class="block text-white text-[16px] hover:text-[#C3E93A] py-2 md:mx-2">Home</a>
+            <a href="/" class="block text-white text-[16px] hover:text-[#C3E93A] py-2 md:mx-2">Home</a>
           </li>
           <li>
             <a href="/testimonial" class="block text-white text-[16px] hover:text-[#C3E93A] py-2 md:mx-2">Testimonial</a>

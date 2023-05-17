@@ -35,8 +35,10 @@
 </head>
 
 <body class='bg-black'>
+    {{-- bertujuan untuk menyematkan jkode pada komponennavbar ke file ini --}}
     @include('components.navbar')
 
+    {{-- untuk mewariskan bagian halaman ini ke anakannya yang nanti akan diakses menggunakan extend --}}
     @yield('content')
 
     @include('components.footer')

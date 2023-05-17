@@ -14,6 +14,7 @@ use App\Http\Controllers\DataController;
 |
 */
 
+// Untuk mengarahkan ke bagian halama
 Route::get('/', function () {
     return view('hero');
 });
@@ -22,6 +23,9 @@ Route::get('/', function () {
 //     return view('testimonial');
 // } );
 
+// Menentukan bahwa ini adalah route dengan metode HTTP GET yang dituju ke URL '/testimonial'. Ketika URL ini diakses, route ini akan ditangani.
+// Mengacu pada method 'card' yang ada di dalam kelas 'DataController'. Method ini akan dieksekusi saat route diakses.
+// Memberikan nama 'testimonial' kepada route ini.
 Route::get('/testimonial',[DataController::class, 'card'])->name('testimonial');
 
 Route::get('/contact', function (){
