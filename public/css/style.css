@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;800;900&display=swap');
+
+:root {
+  --bg: #000;
+  --dark: #f6f6ff;
+}
+* {
+  font-family: 'Ruda', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+w
+/* Buat border bagian body */
+body {
+  background-color: #0000;
+  /* margin: 5px; */
+  padding-bottom: 1200px;
+}
+
+/* ============= HEADER =================== */
+header {
+  background-color: transparent;
+  padding: 1.2rem 5%;
+  z-index: 1000;
+  border-bottom: 1px solid var(--dark);
+}
+
+header .navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8px 0;
+  top: 0;
+  left: 0;
+}
+
+header .navigation .logo {
+  font-size: 42px;
+  color: var(--dark);
+  margin-right: auto;
+}
+
+header .navigation .logo i {
+  padding: 0 0.5rem;
+  color: var(--dark);
+}
+
+header .navigation .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .navigation .navbar ul li {
+  margin: 0 16px;
+}
+
+header .navigation .navbar ul li a {
+  color: var(--dark);
+  font-size: 16px; /*8pt system*/
+}
+
+/* Bgaian button  */
+header .navigation .explore {
+  margin-left: 16px;
+  font-size: 16px;
+  background: #c3e93a;
+  color: black;
+  border-radius: 8px;
+  padding: 0.5rem 2.5rem;
+}
+
+header .navigation .explore:hover {
+  background: #fff;
+  color: #333;
+}
+
+header .navigation .icon-container {
+  margin-left: 16px;
+  padding: 8px 0;
+  padding-left: 16px;
+  gap: 8x;
+  border-left: 1px solid var(--dark);
+}
+
+header .navigation .icon-container i {
+  font-size: 16px;
+  margin-right: 8px;
+  color: white;
+}
+
+header .navigation .icon-container i:hover {
+  color: #c3e93a;
+}
+
+header #menu {
+  font-size: 42px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+/* ============= BODY =================== */
+
+.home {
+  padding: 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* disini poiinya biar home g nempel di bawah navbar */
+.home .slide-container .slide {
+  min-height: 80vh;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 4%;
+  gap: 2rem; /*Ngatur jarak .content dengan .image*/
+  padding: 0 8%; /*Ngatur padding kiri-kanan dalam .slide*/
+  border-left: 1px solid #fff;
+
+  /* border kanan saja */
+  border-right: 1px solid #fff;
+
+  /* border bawah saja */
+  border-bottom: 1px solid #fff;
+}
+
+.home .slide-container .slide .content {
+  flex: 1 1 35rem; /*Biar dia g berada di bawah image, karena image pake relative*/
+  padding-right: 16px;
+}
+
+/* Dengan ini bagian home akan terletak bersebelahan dengan conten, tanpa ini .image akan di bawah .content */
+.home .slide-container .slide .image {
+  flex: 1 1 40rem;
+  position: relative;
+  right: 2%; /*Klo g ada ini gambar bakal keluar dari .home*/
+}
+
+/* ini class img */
+.home .slide-container .slide .image .img {
+  width: 80%; /*Dengan ukuran segini posisi image akan sejajar dengan .navbar*/
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 0 0 0;
+  box-shadow: 0px 0px 5px #21212130;
+}
+
+.home .slide-container .slide .content h2 {
+  font-size: 48px;
+  color: var(--dark);
+}
+
+.home .slide-container .slide .content h2 span {
+  color: #c3e93a;
+}
+
+.home .slide-container .slide .content p {
+  font-size: 16px;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+/* ============= SECTION =================== */
+.sec1 {
+  padding: 0;
+}
+.sec1 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8%;
+  border-bottom: 1px solid white;
+  margin: 0 4%;
+}
+
+.sec1 .row .line {
+  height: 300px;
+  border-right: 1px solid white;
+}
+.sec1 .row .content-left {
+  width: 50%;
+}
+
+.sec1 .row .content-left h3 {
+  font-size: 68px;
+  color: white;
+  flex: 1;
+  line-height: normal;
+}
+
+.sec1 .row .content-left h3 span {
+  color: #c3e93a;
+}
+
+.sec1 .row .content-right {
+  padding: 4rem;
+  width: 50%;
+}
+
+.sec1 .row .content-right p {
+  color: white;
+  flex: 1;
+}
+
+/* ============= Bagian SECTION 2  ============= */
+.video-container {
+  /* padding: 0px 8%; */
+  border-bottom: 1px solid white;
+  margin: 0px 3%;
+}
+
+/* ============= Bagian TESTIMONIAL  ============= */
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991p) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  header .navigation {
+    z-index: 999;
+  }
+  header .navigation #menu {
+    display: block;
+    cursor: pointer;
+    order: 1;
+    font-size: 24px;
+    color: var(--dark);
+  }
+
+  header .navigation .navbar {
+    position: fixed;
+    top: 6rem;
+    right: -120%;
+    height: 100vh;
+    background: #f6f6ff;
+    width: 100vw;
+    z-index: 999;
+  }
+
+  header .navigation .navbar ul {
+    padding-top: 4rem;
+    flex-flow: column;
+  }
+
+  header .navigation .navbar ul li {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  header .navigation .navbar ul li a {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  header .navigation .nav-toggle {
+    right: 0%;
+  }
+  header .navigation .explore {
+    margin-right: 2rem;
+  }
+
+  header .navigation .icon-container {
+    display: none;
+  }
+
+  .video-container {
+    margin: 0;
+  }
+}
