@@ -1,20 +1,25 @@
 @extends('layouts.main')
 
 @section('content')
-    
     <!-- HERO START -->
-    <section class="flex justify-center items-center min-h-[32vh] md:min-h-[72vh] relative" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in">
+    <section class="flex justify-center items-center min-h-[32vh] md:min-h-[72vh] relative md:mb-1 mb-[20px]"
+        data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in">
         <div class="text-center">
-          <p class="italic text-[10px] text-[#C3E93A] absolute md:top-[80px] top-[72px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">Testimonial</p>
-          <h3 class="text-2xl md:text-[64px] text-[24px] font-bold text-white leading-normal md:mt-0 mt-[80px]">
-            <span class="text-[#C3E93A] italic">"</span> The Best Way To Predict The <br />Future is To Create It.<span class="text-[#C3E93A] italic">"</span>
-          </h3>
-          <p class="text-[12px] md:text-lg text-white opacity-80">We're neve done with a project until our partners are happy with it. Check out what theu have to say about us!</p>
+            <p
+                class="italic text-[10px] text-[#C3E93A] absolute md:top-[80px] top-[72px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                Testimonial</p>
+            <h3 class="text-2xl md:text-[64px] text-[24px] font-bold text-white leading-normal md:mt-0 mt-[80px]">
+                <span class="text-[#C3E93A] italic">"</span> The Best Way To Predict The <br />Future is To Create It.<span
+                    class="text-[#C3E93A] italic">"</span>
+            </h3>
+            <p class="text-[12px] md:text-lg text-white opacity-80">We're neve done with a project until our partners are
+                happy with it. Check out what theu have to say about us!</p>
         </div>
-      </section>
+    </section>
     <!-- HERO END -->
     <!-- Testimonila start -->
-    <section class="testim flex items-center flex-wrap flex-col" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in">
+    <section class="testim flex items-center flex-wrap flex-col" data-aos="fade-up" data-aos-offset="200"
+        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in">
         <!-- card 1 -->
         <div class="md:w-[1200px] w-full p-2 text-center mb-4 border-b border-white border-solid">
             <div class="mx-auto w-[72px] h-[72px] rounded-full overflow-hidden">
@@ -50,7 +55,8 @@
 
 
     <!-- bagian card -->
-    <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in">
+    <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in">
         <div class="container mt-5">
 
             <!-- Create a new Post button -->
@@ -66,20 +72,19 @@
             <div class="m-6 flex justify-center items-center">
 
                 @foreach ($data as $d)
-                    
-                <div class="bg-white rounded shadow border p-6 ml-4" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="text-3xl font-bold mb-4 mt-0">{{ $d->title }}</h5>
-                        <p class="text-gray-700 text-sm"> {{ $d->content }} </p>
-                        <a href="{{ route('view.data', [$d->id]) }}" class="text-gray-700 text-[16px]">Read More <span
-                                class="text-gray-700">&rarr;</span></a>
+                    <div class="bg-white rounded shadow border p-6 ml-4" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="text-3xl font-bold mb-4 mt-0">{{ $d->title }}</h5>
+                            <p class="text-gray-700 text-sm"> {{ $d->content }} </p>
+                            <a href="{{ route('view.data', [$d->id]) }}" class="text-gray-700 text-[16px]">Read More
+                                <span class="text-gray-700">&rarr;</span></a>
+                        </div>
                     </div>
-                </div>
                 @endforeach
-                
-                
+
+
             </div>
-            
+
         </div>
     </section>
 @endsection

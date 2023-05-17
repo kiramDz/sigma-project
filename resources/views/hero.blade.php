@@ -8,7 +8,7 @@
             class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row md:gap-[100px] gap-1 md:border-solid border-l border-r border-b border-white border-none">
             <div
                 class="flex items-center justify-center p-6 mt-8 lg:mt-0 order-first lg:order-last h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                <img src="image/img1.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                <img src="image/img1.png" alt="" class="object-contain h-80 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
             </div>
             <div
                 class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left md:order-first order-last">
@@ -33,7 +33,7 @@
         data-aos-easing="ease-in">
         <div class="row">
             <div class="content-left">
-                <h3>
+                <h3 class="md:text-[68px] text-[32px]">
                     WE ARE <span><br />FRONT-END <br />PLAYER</span>
                 </h3>
             </div>
@@ -194,21 +194,21 @@
                         <li class="mb-1">
                             <button @click="showCards = 'all' "
                                 :class="showCards == 'all' ? activeClasses : inactiveClasses"
-                                class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
+                                class="inline-block text-white rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
                                 All Projects
                             </button>
                         </li>
                         <li class="mb-1">
                             <button @click="showCards = 'branding' "
                                 :class="showCards == 'branding' ? activeClasses : inactiveClasses"
-                                class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
+                                class="inline-block text-white rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
                                 Branding
                             </button>
                         </li>
                         <li class="mb-1">
                             <button @click="showCards = 'design' "
                                 :class="showCards == 'design' ? activeClasses : inactiveClasses"
-                                class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
+                                class="inline-block text-white rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
                                 Design
                             </button>
                         </li>
@@ -224,14 +224,14 @@
                         <li class="mb-1">
                             <button @click="showCards = 'development' "
                                 :class="showCards == 'development' ? activeClasses : inactiveClasses"
-                                class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
+                                class="inline-block text-white rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 focus:text-black focus:bg-green-300 hover:bg-green-300">
                                 Development
                             </button>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="-mx-4 flex flex-wrap">
+            <div class=" -mx-4 flex flex-wrap">
                 <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden'"
                     class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="relative mb-12">
@@ -243,7 +243,7 @@
                             <span class="text-primary mb-2 block text-sm font-semibold"> Branding </span>
                             <h3 class="text-dark mb-4 text-xl font-bold">Branding Design</h3>
                             <a href="https://www.osbornebranding.academy/mini-course"
-                                class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                                class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-black" target="_blank">
                                 View Details
                             </a>
                         </div>
@@ -260,7 +260,7 @@
                             <span class="text-primary mb-2 block text-sm font-semibold"> Branding </span>
                             <h3 class="text-dark mb-4 text-xl font-bold">Nike Strategy Branding</h3>
                             <a href="https://www.nike.com/id/"
-                                class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white">
+                                class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-black">
                                 View Details </a>
                         </div>
                     </div>

@@ -7,6 +7,7 @@ toggleBtn.onclick = () => {
   collapse.classList.toggle('hidden');
   collapse.classList.toggle('block');
 };
+
 // Bagian about
 const progressBarContainers = document.querySelectorAll('.progress-bar__container');
 
