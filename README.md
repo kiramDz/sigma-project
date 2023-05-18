@@ -1,4 +1,5 @@
 
+![App Screenshot](https://github.com/kiramDz/sigma-project/assets/126537185/1daf32a1-fd33-462d-827a-be59ab9f6d8a)
 # Sigma
 
 Selamat datang di Sigma, kami adalah mitra andal yang menyediakan layanan desain, pengembangan website, dan branding yang inovatif.
